@@ -1,0 +1,241 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition_samson</title>
+</head>
+<style>
+    *{
+        color: #ffffff;
+        background-color: black;
+        position:relative;
+    }
+    
+    .samson_site{
+        width: 1140px;
+        position:absolute; 
+        left:50%; 
+        transform:translate(-50%);
+
+        }
+
+
+  
+    .site-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 24px;
+
+    }
+    
+  
+    li{
+       float: left;
+       list-style: none;
+       margin-right: 40px;
+       
+    }
+    ul li a{
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+
+    }
+    
+    
+    .logo{
+        margin-right: 64px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contents{
+        
+        display: flex;
+        float: left;
+        margin-left: 64px;
+        margin-top: 72px;
+        flex-wrap: wrap;
+      
+    }
+    .card{
+        width: 259px;
+        height: 365px;
+       
+
+        
+    }
+    .card:hover .image{
+        transform: scale(1.1);
+        transition: ease-out;
+
+    }
+    .card h2{
+        font-size:20px;
+        font-weight: bolder;
+        line-height: 30px;
+        margin-bottom: 0;
+
+        
+    }
+    .card p{
+        font-size: 12px;
+        font-weight:600;
+        line-height: 18px;
+        margin-top: 0;
+        
+    }
+    .card .image{
+        position: relative;
+    }
+    .info{
+        position: absolute;
+        transition: ease-out 1s;
+        bottom:118px;
+        left: -14px;
+        opacity: 0;
+        width: 325px;
+        
+       
+    }
+    .card:hover .info{
+        opacity:1;
+        transition: ease-out 1s;
+
+    }
+    
+   
+  
+
+    
+</style>
+</head>
+<body>
+
+<div class="samson_site">
+ <header class="site-header">
+    
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Hall of Frame</a></li>
+      <li><a href="#">Column</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    
+      
+      <a class="logo"href="#"><img src="https://i.postimg.cc/pXbS6JYL/samson.png" width="224px"height="37px"></a>
+      
+    
+ </header>
+    <div class="contents">
+        <div class="card">
+
+            <div class="image">
+            <img src="https://i.postimg.cc/m2gLt4J9/work-vibe.png" height="235" width="235">
+            </div>
+
+            <div class="info">
+            <h2>Naver Vive</h2>
+            <P>on going <br> Graphic Design / Artwork</P>
+           </div>
+       </div>
+
+
+
+
+
+       <div class="card">
+        <div class="image">
+        <img src="https://i.postimg.cc/FRB2KnXB/work-now.png" height="235" width="235">
+        </div>
+        
+        <div class="info">
+        <h2>Naver Now</h2>
+        <P>on going <br> Graphic Design / Artwork</P>
+       </div>
+       </div>
+
+       <div class="card">
+        <div class="image">  
+        <img src="https://i.postimg.cc/VkwL15Rb/work-samsunglife.png" height="235" width="235">
+        </div>
+        <div class="info">
+        <h2>Samsung Life Insurance</h2>
+        <P>MAR 2019 - APR 2020 <br> UI / UX / PC & Mobile Web / App</P>
+        </div>
+       </div>
+
+       <div class="card">
+        <div class="image">
+        <img src="https://i.postimg.cc/vmqQWhdW/work-hanwhalife.png" height="235" width="235">
+        </div>
+        <div class="info">
+        <h2>Hanwha Life Insurance</h2>
+        <P>SEP 2017 - NOV 2017 <br> UI / UX / PC & Mobile Web</P>
+        </div>
+       </div>
+
+       <div class="card">
+         <div class="image">
+           <img src="https://i.postimg.cc/mg9X3gfV/work-kakin.png" height="235" width="235">
+         </div>
+         <div class="info">
+           <h2>Musical Imprint</h2>
+           <P>SPR 2017 <br> Graphic Design / Poster</P>
+         </div>
+       </div>
+
+       <div class="card">
+        <div class="image">
+        <img src="https://i.postimg.cc/zXspfYbh/work-haundaicard.png" height="235" width="235">
+        </div>
+        <div class="info">
+        <h2>Hyundai Card</h2>
+        <P>OCT 2016 - DEC 2017 <br> Graphic Design /Direct Mail AD</P>
+       </div>
+       </div>
+
+       <div class="card">
+        <div class="image">
+        <img src="https://i.postimg.cc/zBvTjxH5/work-hanwhasec.png" height="235" width="235">
+        </div>
+        
+       
+        <div class="info">
+        <h2>Hanwha Securities</h2>
+        <P>JAN 2015 - DEC 2016 <br> UI / UX / PC & Mobile Web / App</P>
+        </div>
+        </div>
+
+       <div class="card">
+        <div class="image">
+        <img src="https://i.postimg.cc/K4SLmFqv/work-1q.png" height="235" width="235">
+       </div>
+       <div class="info">
+        <h2>KBE Hana Bank</h2>
+        <P>FEB 2016 - MAR 2016 <br> UI / UX / App</P>
+       </div>
+      </div>
+
+
+
+
+
+    </div>
+
+  </div>
+
+
+</body>
+</html>
+<body>
+    
